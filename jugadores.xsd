@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <!-- Definicion de los tipos básicos -->
     <xs:element name="jugadores">
         <xs:complexType>
             <xs:sequence>
