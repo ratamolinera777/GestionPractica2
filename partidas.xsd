@@ -7,8 +7,6 @@
             <xs:sequence>
                 <xs:element name="partida" maxOccurs="unbounded">
                     <xs:complexType>
-                        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
-                        <xs:attribute name="diasJugados" type="xs:positiveInteger" use="required"/>
                         <xs:sequence>
                             <xs:element name="granja">
                                 <xs:complexType>
@@ -21,6 +19,8 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                        <xs:attribute name="diasJugados" type="xs:positiveInteger" use="required"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
