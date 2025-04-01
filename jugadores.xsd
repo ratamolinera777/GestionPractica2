@@ -1,28 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     <xs:element name="jugadores">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="jugador" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="id" type="xs:int"/>
+                            <xs:element name="id" type="xs:integer"/>
                             <xs:element name="nombre" type="xs:string"/>
-                            <xs:element name="dinero" type="xs:int"/>
-                            <xs:element name="energia" type="xs:int"/>
-                            <xs:element name="salud" type="xs:int"/>
-                            <xs:element name="inventario">
+                            <xs:element name="dinero" type="xs:integer"/>
+                            <xs:element name="energia" type="xs:integer"/>
+                            <xs:element name="salud" type="xs:integer"/>
+                            <xs:element name="inventario" minOccurs="0">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element name="objeto" minOccurs="0" maxOccurs="unbounded">
+                                        <xs:element name="objeto" maxOccurs="unbounded" minOccurs="0">
                                             <xs:complexType>
                                                 <xs:sequence>
-                                                    <xs:element name="cantidad" type="xs:int"/>
+                                                    <xs:element name="cantidad" type="xs:integer"/>
                                                 </xs:sequence>
-                                                <xs:attribute name="id" type="xs:int" use="required"/>
+                                                <xs:attribute name="id" type="xs:integer" use="required"/>
                                             </xs:complexType>
                                         </xs:element>
                                     </xs:sequence>
+                                    <xs:attribute name="ref" type="xs:string" use="required"/>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -31,4 +33,5 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
 </xs:schema>
