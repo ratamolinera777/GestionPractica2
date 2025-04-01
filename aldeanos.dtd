@@ -1,0 +1,19 @@
+<!ELEMENT aldeanos (aldeano+)>
+
+<!ELEMENT aldeano (Nombre_Aldeano, Sexo, Descripcion, Soltero, Amistad, Regalos, Familia, Cumpleaños, Habitacion, Misiones, zonas)>
+<!ELEMENT Nombre_Aldeano (#PCDATA)>
+<!ELEMENT Sexo (#PCDATA)>
+<!ELEMENT Descripcion (#PCDATA)>
+<!ELEMENT Soltero (#PCDATA)>
+<!ELEMENT Amistad (#PCDATA)>
+<!ELEMENT Regalos (#PCDATA)>
+<!ELEMENT Familia (#PCDATA)>
+<!ELEMENT Cumpleaños (#PCDATA)>
+<!ELEMENT Habitacion (#PCDATA)>
+<!ELEMENT Misiones (#PCDATA)>
+<!ELEMENT zonas (zona+)>
+
+<!ELEMENT zona (Nombre_Zona, Descripcion, Horario)>
+<!ELEMENT Nombre_Zona (#PCDATA)>
+<!ELEMENT Descripcion (#PCDATA)>
+<!ELEMENT Horario (#PCDATA)>
