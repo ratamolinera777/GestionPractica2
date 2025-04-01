@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="granjas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="granja" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Tipo_Granja" type="xs:string"/>
+                            <xs:element name="Descripcion" type="xs:string"/>
+                            <xs:element name="estructuras">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="estructura" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="Nombre_Estructuras" type="xs:string"/>
+                                                    <xs:element name="Descripcion" type="xs:string"/>
+                                                    <xs:element name="Coste" type="xs:int"/>
+                                                    <xs:element name="Tamaño" type="xs:int"/>
+                                                    <xs:element name="Animales" type="xs:int"/>
+                                                    <xs:element name="animales">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="animal" minOccurs="0" maxOccurs="unbounded">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element name="Nombre_Animal" type="xs:string"/>
+                                                                            <xs:element name="Tipo" type="xs:string"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
