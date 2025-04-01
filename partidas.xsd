@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Elemento raíz -->
+    <xs:element name="partidas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="partida" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+                        <xs:attribute name="diasJugados" type="xs:positiveInteger" use="required"/>
+                        <xs:sequence>
+                            <xs:element name="granja">
+                                <xs:complexType>
+                                    <xs:attribute name="ref" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="jugador">
+                                <xs:complexType>
+                                    <xs:attribute name="ref" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
