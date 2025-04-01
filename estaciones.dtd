@@ -1,0 +1,20 @@
+<!ELEMENT estaciones (estacion+)>
+<!ELEMENT estacion (Nombre_Estacion, Duracion, cultivos, peces)>
+<!ELEMENT Nombre_Estacion (#PCDATA)>
+<!ELEMENT Duracion (#PCDATA)>
+<!ELEMENT cultivos (cultivo*)>
+<!ELEMENT cultivo (ID_Cultivo, Nombre, Estacion, Descripcion, Animales)>
+<!ELEMENT ID_Cultivo (#PCDATA)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Estacion (#PCDATA)>
+<!ELEMENT Descripcion (#PCDATA)>
+<!ELEMENT Animales (#PCDATA)>
+<!ELEMENT peces (pez*)>
+<!ELEMENT pez (ID_Pez, Nombre, Descripcion, Localizacion, Estacion, Utilidad, Calidad, Experiencia, Dificultad, Precio)>
+<!ELEMENT ID_Pez (#PCDATA)>
+<!ELEMENT Localizacion (#PCDATA)>
+<!ELEMENT Utilidad (#PCDATA)>
+<!ELEMENT Calidad (#PCDATA)>
+<!ELEMENT Experiencia (#PCDATA)>
+<!ELEMENT Dificultad (#PCDATA)>
+<!ELEMENT Precio (#PCDATA)>
