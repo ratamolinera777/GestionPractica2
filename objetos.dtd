@@ -1,0 +1,5 @@
+<!ELEMENT objetos (objeto+)>
+<!ELEMENT objeto (tipo, descripcion)>
+<!ATTLIST objeto id CDATA #REQUIRED>
+<!ELEMENT tipo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
